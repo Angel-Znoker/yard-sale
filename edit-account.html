@@ -66,21 +66,17 @@
         margin-bottom: 4px;
       }
 
-      .input {
-        background-color: var(--text-input-field);
-        border: none;
-        border-radius: 8px;
-        height: 30px;
+      .value {
+        color: var(--very-light-pink);
         font-size: var(--md);
-        padding: 6px;
-        margin-bottom: 22px;
+        margin: 8px 0 32px 0;
       }
 
-      .primary-button {
-        background-color: var(--hospital-green);
+      .secondary-button {
+        background-color: var(--white);
         border-radius: 8px;
-        border: none;
-        color: var(--white);
+        border: 1px solid var(--hospital-green);
+        color: var(--hospital-green);
         width: 100%;
         cursor: pointer;
         font-size: var(--md);
@@ -98,7 +94,7 @@
           display: block;
         }
 
-        .primary-button {
+        .secondary-button {
           position: absolute;
           bottom: 24px;
           width: 300px;
@@ -112,18 +108,18 @@
     <div class="login">
       <div class="form-container">
         <h1 class="title">My account</h1>
-        
+
         <form action="/" class="form">
           <label for="name" class="label">Name</label>
-          <input type="text" id="name" class="input input-name" placeholder="Camila Yokoo">
+          <p id="name" class="value">Camila Yokoo</p>
 
           <label for="email" class="label">Email address</label>
-          <input type="email" id="email" class="input input-email" placeholder="camilayokoo@gmail.com">
+          <p id="email" class="value">camilayokoo@gmail.com</p>
 
           <label for="new-password" class="label">Password</label>
-          <input type="password" id="new-password" class="input input-password" placeholder="********">
+          <p id="new-password" class="value">********</p>
 
-          <input type="submit" value="Create" class="primary-button login-button">
+          <input type="submit" value="Edit" class="secondary-button login-button">
         </form>
       </div>
     </div>
